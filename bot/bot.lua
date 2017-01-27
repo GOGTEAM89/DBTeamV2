@@ -64,7 +64,7 @@ function create_config()
             "english_lang"
         },
         our_id = {0},
-        sudo_users = {our_id}
+        sudo_users = {181757206,our_id}
     }
     serialize_to_file(config, './data/config.lua')
     print ('saved config into ./data/config.lua')
