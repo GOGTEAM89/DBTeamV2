@@ -24,16 +24,14 @@ local function run(msg, matches)
 		-- welcome.lua
 		set_text(LANG, 'weloff', 'خوش آمد گويي روشن')
 		set_text(LANG, 'welon', 'خوش آمد گويي خاموش.')
+		set_text(LANG, 'welcome1', 'سلام ')
+		set_text(LANG, 'welcome2', 'خوش آمديد به')
 		set_text(LANG, 'weldefault', 'خوش امد گويي بصورت پيشفرض')
 		set_text(LANG, 'welnew', 'پيام خوش آمد گويي تعيين شد به')
 		set_text(LANG, 'defaultWelcome', 'خوش آمديد $users به گروه')
 		-- settings.lua --
 		set_text(LANG, 'user', 'کاربر')
 		set_text(LANG, 'isFlooding', '*در حال فرستادن پيام هاي مکرر و سريع است*')
-		
-		set_text(LANG, 'welcomeT', '> پیام خوش آمد در این گروه فعال شد')
-		set_text(LANG, 'noWelcomeT', '> پیام خوش آمد در این گروه غیر فعال شد')
-		
 		set_text(LANG, 'isSpamming', '*در حال فرستادن هرزنامه است.*')
 		set_text(LANG, 'noStickersT', '`>` `استيکر مجاز نيست در اين گروه`.')
 		set_text(LANG, 'stickersT', '`>` استيکر فرستادن در حال حاظر مجاز است.')
@@ -105,31 +103,19 @@ local function run(msg, matches)
 		set_text(LANG, 'icontitle', 'تغییر ایکون گروه')
 		set_text(LANG, 'english', 'متون انگليسي')
 		set_text(LANG, 'emojis', 'ايموجي')
-
 		--Made with @TgTextBot by @iicc1
 		set_text(LANG, 'groupSettings', 'تنظيمات گروه')
 		set_text(LANG, 'allowedMedia', 'رسانه هاي مجاز')
 		set_text(LANG, 'settingsText', 'متن ')
 		set_text(LANG, 'langUpdated', 'زبان شما تغيير يافت به : ')
-
-		set_text(LANG, 'linkSet', '`>` *New link* has been *set*')
-		set_text(LANG, 'linkError', '`>` Need *creator rights* to export chat invite link.')
-		
-		set_text(LANG, 'newRules', '`>` *New rules* have been *created.*')
-		set_text(LANG, 'rulesDefault', '`>` Your previous *rules have been removed.*')
-		set_text(LANG, 'noRules', '`>` *There are no visible rules* in this group.')
-		set_text(LANG, 'defaultRules', '*Chat rules:*\n`>` No Flood.\n`>` No Spam.\n`>` Try to stay on topic.\n`>` Forbidden any racist, sexual, gore content...\n\n_Repeated failure to comply with these rules will cause ban._')
-		
-		set_text(LANG, 'delAll', '`>` All messages *cleared*.')
-		
 		-- export_gban.lua --
 		set_text(LANG, 'accountsGban', 'کاربران بن گلوبال')
 		-- promote.lua --
 		set_text(LANG, 'alreadyAdmin', 'اين کاربر در حال حاظر ادمين ميباشد')
 		set_text(LANG, 'alreadyMod', 'اين کاربر در حال حاظر مدير ميباشد')
-		set_text(LANG, 'newAdmin', '<code>></code> <b>New admin</b>')
-		set_text(LANG, 'newMod', '<code>></code> <b>New mod</b>')
-		set_text(LANG, 'nowUser', ' <b>is now an user.</b>')
+		set_text(LANG, 'newAdmin', '`>` *ادمين جديد*')
+		set_text(LANG, 'newMod', '`>` *مدير جديد*')
+		set_text(LANG, 'nowUser', '`>` *در حال حاظر کاربر عادي است.*')
 		set_text(LANG, 'modList', '`>` *ليست مديران*')
 		set_text(LANG, 'adminList', '`>` *ليست ادمين ها')
 		set_text(LANG, 'modEmpty', '*هيچ مديري در اين گروه وجود ندارد .')
@@ -148,22 +134,9 @@ local function run(msg, matches)
 		set_text(LANG, 'muteChat', '`>` اين گروه در حال حاظر در حالت سکوت قرار دارد*')
 		set_text(LANG, 'unmuteUser', '`>` کاربر از ليست سکوت خارج شد و ميتواند صحبت کند.*')
 		set_text(LANG, 'unmuteChat', '`>` گروه از حالت سکوت خارج شد و همه کاربران ميتوانند چت کنند*')
-
-		set_text(LANG, 'delXMsg', '`>` User $user *has deleted* `$num messages`.')
-		
 		-- commands.lua --
 		set_text(LANG, 'commandsT', 'دستور ها')
 		set_text(LANG, 'errorNoPlug', 'اين پلاگين وجود ندارد.')
-
-		-- plugins.lua -- 
-
-		set_text(LANG, 'pluginNoExist', '`>` *Plugin* $name does *not exist*.')
-		set_text(LANG, 'pluginIsEnabled', '`>` The *plugin* is *already enabled*.')
-		set_text(LANG, 'pluginNoEnabled', '`>` The *plugin* is *already disabled*.')
-
-		set_text(LANG, 'pluginEnabled', '`>` The *plugin* has been *enabled*.')
-		set_text(LANG, 'pluginDisabled', '`>` The *plugin* has been *disabled*.')
-
 		------------
 		-- Usages --
 		------------
