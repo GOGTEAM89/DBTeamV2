@@ -29,6 +29,8 @@ local function run(msg, matches)
 		-- welcome.lua
 		set_text(LANG, 'weloff', 'Welcome enabled.')
 		set_text(LANG, 'welon', 'Welcome disabled.')
+		set_text(LANG, 'welcome1', 'Hi ')
+		set_text(LANG, 'welcome2', 'Welcome to ')
 		set_text(LANG, 'weldefault', 'The welcome is the default.')
 		set_text(LANG, 'welnew', 'Welcome saved! is')
 		set_text(LANG, 'defaultWelcome', 'Welcome $users to the chat!')
@@ -37,9 +39,6 @@ local function run(msg, matches)
 		set_text(LANG, 'user', 'User')
 		set_text(LANG, 'isFlooding', '*is flooding.*')
 		set_text(LANG, 'isSpamming', '*is spamming.*')
-		
-		set_text(LANG, 'welcomeT', '> *Welcome messages* are now *enabled* in this chat.')
-		set_text(LANG, 'noWelcomeT', '> *Welcome messages* are *disabled* in this chat.')
 
 		set_text(LANG, 'noStickersT', '`>` *Stickers* are *not allowed* in this chat.')
 		set_text(LANG, 'stickersT', '`>` *Stickers* are now *allowed* in this chat.')
@@ -142,17 +141,6 @@ local function run(msg, matches)
 
 		set_text(LANG, 'langUpdated', 'Your language has been updated to: ')
 
-		set_text(LANG, 'linkSet', '`>` *New link* has been *set*')
-		set_text(LANG, 'linkError', '`>` Need *creator rights* to export chat invite link.')
-		
-		set_text(LANG, 'newRules', '`>` *New rules* have been *created.*')
-		set_text(LANG, 'rulesDefault', '`>` Your previous *rules have been removed.*')
-		set_text(LANG, 'noRules', '`>` *There are no visible rules* in this group.')
-
-		set_text(LANG, 'defaultRules', '*Chat rules:*\n`>` No Flood.\n`>` No Spam.\n`>` Try to stay on topic.\n`>` Forbidden any racist, sexual, gore content...\n\n_Repeated failure to comply with these rules will cause ban._')
-		
-		set_text(LANG, 'delAll', '`>` All messages *cleared*.')
-
 		-- export_gban.lua --
 		set_text(LANG, 'accountsGban', 'accounts globally banned.')
 
@@ -160,9 +148,9 @@ local function run(msg, matches)
 		set_text(LANG, 'alreadyAdmin', 'This user is already *admin.*')
 		set_text(LANG, 'alreadyMod', 'This user is already *mod.*')
 
-		set_text(LANG, 'newAdmin', '<code>></code> <b>New admin</b>')
-		set_text(LANG, 'newMod', '<code>></code> <b>New mod</b>')
-		set_text(LANG, 'nowUser', ' <b>is now an user.</b>')
+		set_text(LANG, 'newAdmin', '`>` *New admin*')
+		set_text(LANG, 'newMod', '`>` *New mod*')
+		set_text(LANG, 'nowUser', '`>` *is now an user.*')
 
 		set_text(LANG, 'modList', '`>` *Mods list*')
 		set_text(LANG, 'adminList', '`>` *Admins list')
@@ -184,21 +172,12 @@ local function run(msg, matches)
 		set_text(LANG, 'muteChat', '`>` The chat has been *muted.*')
 		set_text(LANG, 'unmuteUser', '`>` The user *can talk now.*')
 		set_text(LANG, 'unmuteChat', '`>` The users *can talk now.*')
-
-		set_text(LANG, 'delXMsg', '`>` User $user *has deleted* `$num messages`.')
+		
 		
 		-- commands.lua --
 		set_text(LANG, 'commandsT', 'Commands')
-		set_text(LANG, 'errorNoPlug', 'The plugin does not exists or has not usages.')
+		set_text(LANG, 'errorNoPlug', 'This plugin does not exists or has not usages.')
 
-		-- plugins.lua -- 
-
-		set_text(LANG, 'pluginNoExist', '`>` *Plugin* $name does *not exist*.')
-		set_text(LANG, 'pluginIsEnabled', '`>` The *plugin* is *already enabled*.')
-		set_text(LANG, 'pluginNoEnabled', '`>` The *plugin* is *already disabled*.')
-
-		set_text(LANG, 'pluginEnabled', '`>` The *plugin* has been *enabled*.')
-		set_text(LANG, 'pluginDisabled', '`>` The *plugin* has been *disabled*.')
 	
 		------------
 		-- Usages --
